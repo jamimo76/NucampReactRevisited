@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
 import CampsiteCard from "./CampsiteCard";
-import { selectAllCampsites } from "./campsitesSlice";
+import { selectAllCampsites } from "./CampsitesSlice";
 
 const CampsitesList = ({ setCampsiteId }) => {
   const campsites = selectAllCampsites();

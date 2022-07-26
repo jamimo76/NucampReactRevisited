@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import CampsiteDetail from "../features/campsites/CampsiteDetail";
 import CampsitesList from "../features/campsites/CampsitesList";
-import { selectCampsiteById } from "../features/campsites/campsitesSlice";
+import { selectCampsiteById } from "../features/campsites/CampsitesSlice";
 
 const CampsitesDirectoryPage = () => {
   const [campsiteId, setCampsiteId] = useState(0);
