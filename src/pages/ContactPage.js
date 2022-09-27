@@ -1,5 +1,6 @@
 import { Container, Col, Row } from "reactstrap";
 import SubHeader from "../components/SubHeader";
+import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => {
   return (
@@ -17,7 +18,10 @@ const ContactPage = () => {
           </address>
         </Col>
         <Col>
-          <a role="button" className="btn btn-link" href="tel:+12065551234"></a>
+          <a role="button" className="btn btn-link" href="tel:+12065551234">
+            {" "}
+            206-555-1234
+          </a>
           <br />
           <a
             role="button"
@@ -33,7 +37,9 @@ const ContactPage = () => {
           <h2>Send Us Your Feedback</h2>
           <hr />
         </Col>
-        <Col md="10">TBD: ContactForm</Col>
+        <Col md="10">
+          <ContactForm />
+        </Col>
       </Row>
     </Container>
   );
